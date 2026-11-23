@@ -1,0 +1,61 @@
+<svg width="900" height="64" viewBox="0 0 900 64" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .r1 { animation: t1 12s infinite; }
+    .r2 { animation: t2 12s infinite; }
+    .r3 { animation: t3 12s infinite; }
+    .caret { animation: caretX 12s infinite; }
+    @keyframes t1 {
+      0% { width: 0px; animation-timing-function: steps(37, end); }
+      12.5% { width: 460px; }
+      29.5% { width: 460px; animation-timing-function: steps(10, end); }
+      33.33% { width: 0px; }
+      100% { width: 0px; }
+    }
+    @keyframes t2 {
+      0% { width: 0px; }
+      33.33% { width: 0px; animation-timing-function: steps(44, end); }
+      45.83% { width: 548px; }
+      62.83% { width: 548px; animation-timing-function: steps(10, end); }
+      66.66% { width: 0px; }
+      100% { width: 0px; }
+    }
+    @keyframes t3 {
+      0% { width: 0px; }
+      66.66% { width: 0px; animation-timing-function: steps(35, end); }
+      79.16% { width: 436px; }
+      96.16% { width: 436px; animation-timing-function: steps(10, end); }
+      100% { width: 0px; }
+    }
+    @keyframes caretX {
+      0% { transform: translateX(0px); animation-timing-function: steps(37, end); }
+      12.5% { transform: translateX(460px); }
+      29.5% { transform: translateX(460px); animation-timing-function: steps(1, end); }
+      33.33% { transform: translateX(0px); animation-timing-function: steps(44, end); }
+      45.83% { transform: translateX(548px); }
+      62.83% { transform: translateX(548px); animation-timing-function: steps(1, end); }
+      66.66% { transform: translateX(0px); animation-timing-function: steps(35, end); }
+      79.16% { transform: translateX(436px); }
+      96.16% { transform: translateX(436px); animation-timing-function: steps(1, end); }
+      100% { transform: translateX(0px); }
+    }
+  </style>
+
+  <rect width="900" height="64" rx="10" fill="#0b1220"/>
+  <rect x="0.75" y="0.75" width="898.5" height="62.5" rx="9" fill="none" stroke="#1f3b57" stroke-width="1.5"/>
+
+  <text x="26" y="41" font-family="'Courier New', monospace" font-size="21" font-weight="bold" fill="#22d3ee">&gt;_</text>
+
+  <clipPath id="c1"><rect class="r1" x="70" y="14" height="36" width="0"/></clipPath>
+  <clipPath id="c2"><rect class="r2" x="70" y="14" height="36" width="0"/></clipPath>
+  <clipPath id="c3"><rect class="r3" x="70" y="14" height="36" width="0"/></clipPath>
+
+  <text x="70" y="41" font-family="'Courier New', monospace" font-size="21" fill="#5eead4" clip-path="url(#c1)">SOC Analyst (Entry Level) | Blue Team</text>
+  <text x="70" y="41" font-family="'Courier New', monospace" font-size="21" fill="#5eead4" clip-path="url(#c2)">Network Forensics | SIEM | Incident Response</text>
+  <text x="70" y="41" font-family="'Courier New', monospace" font-size="21" fill="#5eead4" clip-path="url(#c3)">Wazuh | Splunk | Microsoft Sentinel</text>
+
+  <g class="caret">
+    <rect x="74" y="20" width="11" height="25" fill="#5eead4">
+      <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.45;0.5;0.95;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
